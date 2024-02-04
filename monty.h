@@ -74,13 +74,21 @@ extern args_t *arguments;
 
 
 /* FUNCTONS PROTOTYPES */
+int dprintf(int fd, const char *format, ...);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+FILE *fdopen(int fd, const char *mode);
 void initialize_args(void);
 void check_args(int argc);
 void _getstream(char *file_name);
-
+void close_stream(void);
 void getstream_error(char *file_name);
 void malloc_error(void);
-
+void token_line(void);
+void free_tokens(void);
+void get_instructions(void);
+void run_instructions(void);
+void instructions_error(void);
+int is_num(char *string);
 
 
 /* OPCODE FUNCTIONS */
