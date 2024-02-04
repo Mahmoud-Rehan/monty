@@ -93,7 +93,7 @@ void instructions_error(void);
 int is_num(char *string);
 void free_h(void);
 void free_stack(stack_t *h);
-
+void free_all(void);
 
 
 /* OPCODE FUNCTIONS */
