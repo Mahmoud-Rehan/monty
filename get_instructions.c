@@ -7,13 +7,13 @@ void get_instructions(void)
 	instruction_t instructions[] = {
 		{"push", &push}, {"pop", &pop},
 		{"pint	", &pint}, {"swap", &swap},
-		{"nop", &nop}, {"add", &add},
-		{"pall", &pall}, {"sub", &sub},
+		/*{"nop", &nop},*/ {"add", &add},
+		{"pall", &pall}, /*{"sub", &sub},
 		{"div", &_div}, {"mul", &mul},
 		{"rotl", &rotl}, {"rotr", &rotr},
 		{"stack", &stack}, {"queue", &queue},
 		{"pstr", &pstr}, {"pchar", &pchar},
-		{"mod", &mod},
+		{"mod", &mod},*/
 		{NULL, NULL}
 	};
 
