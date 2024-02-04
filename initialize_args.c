@@ -25,5 +25,8 @@ void initialize_args(void)
 	arguments->stream = NULL;
 	arguments->line = NULL;
 	arguments->tokens_num = 0;
-	arguemnts->line_num = 0;
+	arguments->line_num = 0;
+	arguments->h = NULL;
+	arguments->stack_len = 0;
+	arguments->stack = 1;
 }
