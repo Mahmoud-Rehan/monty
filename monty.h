@@ -80,6 +80,7 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 FILE *fdopen(int fd, const char *mode);
 void initialize_args(void);
 void check_args(int argc);
+void free_args(void);
 void _getstream(char *file_name);
 void close_stream(void);
 void getstream_error(char *file_name);
@@ -90,6 +91,9 @@ void get_instructions(void);
 void run_instructions(void);
 void instructions_error(void);
 int is_num(char *string);
+void free_h(void);
+void free_stack(stack_t *h);
+
 
 
 /* OPCODE FUNCTIONS */
