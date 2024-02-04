@@ -25,7 +25,7 @@ void token_line(void)
 			(arguments->tokens_num + 1));
 
 	strcpy(line_copy, arguments->line);
-	tok = strtok(line_cpy, delim);
+	tok = strtok(line_copy, delim);
 	
 	while (tok)
 	{
@@ -43,5 +43,5 @@ void token_line(void)
 	}
 
 	arguments->tokens[n] = NULL;
-	free(line_cpy);
+	free(line_copy);
 }

@@ -1,12 +1,12 @@
 #include "monty.h"
 
 
-void push(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number)
 {
 	if (arguments->tokens_num <= 1 || !(is_num(arguments->tokens[1])))
 	{
-		free_arguments();
-		dprint(2, "L%d: usage: push integer\n");
+		free_args();
+		dprintf(2, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
