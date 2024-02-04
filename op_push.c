@@ -48,5 +48,5 @@ void push(stack_t **stack, unsigned int line_number)
 	}
 
 	
-	arguemnts->stack_len += 1;
+	arguments->stack_len += 1;
 }

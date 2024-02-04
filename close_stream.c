@@ -3,7 +3,7 @@
 
 void close_stream(void)
 {
-	if (argumnts->stream == NULL)
+	if (arguments->stream == NULL)
 	{
 		return;
 	}

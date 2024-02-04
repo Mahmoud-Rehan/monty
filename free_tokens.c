@@ -16,6 +16,6 @@ void free_tokens(void)
 		n++;
 	}
 
-	free(arguemnts->tokens);
+	free(arguments->tokens);
 	arguments->tokens = NULL;
 }
