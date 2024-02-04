@@ -7,9 +7,9 @@ void get_instructions(void)
 	instruction_t instructions[] = {
 		{"push", &push}, {"pop", &pop},
 		{"pint	", &pint}, {"swap", &swap},
-		/*{"nop", &nop},*/ {"add", &add},
-		{"pall", &pall}, /*{"sub", &sub},
-		{"div", &_div}, {"mul", &mul},
+		{"nop", &nop}, {"add", &add},
+		{"pall", &pall}, {"sub", &sub},
+		{"div", &_div}, {"mul", &mul},/*
 		{"rotl", &rotl}, {"rotr", &rotr},
 		{"stack", &stack}, {"queue", &queue},
 		{"pstr", &pstr}, {"pchar", &pchar},
@@ -20,6 +20,13 @@ void get_instructions(void)
 	if (arguments->tokens_num == 0)
 	{
 		return;
+	}
+
+	if (arguments->tokens[0][0] == '#')
+	{
+		arguments->instructions->opcode = "nop";
+		arguments->instructions->f = nop;
+		return;	
 	}
 
 	for (n = 0; instructions[n].opcode != NULL; n++)
