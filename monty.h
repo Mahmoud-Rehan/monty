@@ -22,9 +22,9 @@
 
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 
@@ -40,20 +40,30 @@ typedef struct stack_s
 
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 
 
 /**
- * struct args - Hold the arguments.
- * @stream: The file stream.
- * @line: The line read from stream.
+ * struct args - hold variables
+ * @stream: File that connects to the stream from file
+ * @line: string which will be the line of text read from stream
+ * @line_num: for tracking current line number
+ * @tokens: used to store tokens from line
+ * @instructions: a valid instruction from a line
+ * @tokens_num: number of tokens created from line
+ * @h: head of the stack (doubly linked lists of struct stack_s)
+ * @stack_len: tracks the number of nodes in the stack
+ * @stack: used to determine whether to use stack/queue data structure
  *
- * Description: Hold arguments used in
- * functions of the project.
+ * Description: hold variables that will be used
+ * in different functions of the project as well as variables
+ * that will require memory allocation and freeing
  */
+
+
 
 typedef struct args
 {
@@ -110,13 +120,13 @@ void sub(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
-/*void pchar(stack_t **stack, unsigned int line_number);
+void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void stack(stack_t **stack, unsigned int line_number);
 void queue(stack_t **stack, unsigned int line_number);
-*/
+
 
 
 #endif
