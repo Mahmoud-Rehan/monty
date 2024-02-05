@@ -1,7 +1,15 @@
 #include "monty.h"
 
+
 args_t *arguments = NULL;
 
+
+/**
+ * main - The main function of the program.
+ * @argc: Number of command-line arguments.
+ * @argv: Pointer to an array of strings.
+ * Return: returns 0.
+ */
 int main(int argc, char **argv)
 {
 	size_t size = 0;

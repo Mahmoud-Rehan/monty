@@ -1,5 +1,9 @@
 #include "monty.h"
 
+/**
+ * close_stream - Closes the file stream.
+ */
+
 
 void close_stream(void)
 {

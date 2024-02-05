@@ -26,7 +26,7 @@ void token_line(void)
 
 	strcpy(line_copy, arguments->line);
 	tok = strtok(line_copy, delim);
-	
+
 	while (tok)
 	{
 		arguments->tokens[n] = malloc(sizeof(char) *

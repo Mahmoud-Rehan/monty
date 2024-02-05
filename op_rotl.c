@@ -1,6 +1,12 @@
 #include "monty.h"
 
 
+/**
+ * rotl - rotates the stack to the top
+ * @stack: Pointer to the stack.
+ * @line_number: Line number.
+ */
+
 void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *first, *second;

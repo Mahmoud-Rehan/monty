@@ -1,6 +1,14 @@
 #include "monty.h"
 
 
+/**
+ * mod - computes the rest of the division of the two top
+ * elements of the stack.
+ * @stack: Pointer to the stack.
+ * @line_number: Line number.
+ */
+
+
 void mod(stack_t **stack, unsigned int line_number)
 {
 	stack_t *first, *second;

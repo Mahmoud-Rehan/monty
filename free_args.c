@@ -1,6 +1,11 @@
 #include "monty.h"
 
 
+/**
+ * free_args - Frees all allocated memory for arumnets ptr.
+ */
+
+
 void free_args(void)
 {
 	if (arguments == NULL)

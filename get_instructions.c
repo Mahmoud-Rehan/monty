@@ -1,6 +1,11 @@
 #include "monty.h"
 
 
+/**
+ * get_instructions - Sets the instruction based on the first token.
+ */
+
+
 void get_instructions(void)
 {
 	int n;
@@ -9,11 +14,11 @@ void get_instructions(void)
 		{"pint	", &pint}, {"swap", &swap},
 		{"nop", &nop}, {"add", &add},
 		{"pall", &pall}, {"sub", &sub},
-		{"div", &_div}, {"mul", &mul},/*
+		{"div", &_div}, {"mul", &mul},
 		{"rotl", &rotl}, {"rotr", &rotr},
 		{"stack", &stack}, {"queue", &queue},
 		{"pstr", &pstr}, {"pchar", &pchar},
-		{"mod", &mod},*/
+		{"mod", &mod},
 		{NULL, NULL}
 	};
 
@@ -26,7 +31,7 @@ void get_instructions(void)
 	{
 		arguments->instructions->opcode = "nop";
 		arguments->instructions->f = nop;
-		return;	
+		return;
 	}
 
 	for (n = 0; instructions[n].opcode != NULL; n++)

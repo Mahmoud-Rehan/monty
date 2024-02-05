@@ -1,6 +1,11 @@
 #include "monty.h"
 
 
+/**
+ * rotr - rotates the stack to the bottom
+ * @stack: Pointer to the stack.
+ * @line_number: Line number.
+ */
 
 void rotr(stack_t **stack, unsigned int line_number)
 {
@@ -15,7 +20,7 @@ void rotr(stack_t **stack, unsigned int line_number)
 	}
 
 	temp = arguments->h;
-	
+
 	while (temp)
 	{
 		if (temp->next == NULL)

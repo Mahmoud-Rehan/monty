@@ -3,7 +3,7 @@
 
 /**
  * _getstream - Gets stream for reading from file.
- * file_name: name of the file.
+ * @file_name: name of the file to open the stream.
  */
 
 void _getstream(char *file_name)

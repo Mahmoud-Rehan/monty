@@ -1,5 +1,9 @@
 #include "monty.h"
 
+/**
+* delete_stack_top - delete stack top.
+*/
+
 
 void delete_stack_top(void)
 {
@@ -7,5 +11,5 @@ void delete_stack_top(void)
 
 	temp = arguments->h;
 	arguments->h = temp->next;
-	free(temp);	
+	free(temp);
 }

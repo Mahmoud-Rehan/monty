@@ -1,5 +1,9 @@
 #include "monty.h"
 
+/**
+ * free_h - Frees allocated memory for h.
+ */
+
 
 void free_h(void)
 {
