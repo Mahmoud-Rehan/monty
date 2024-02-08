@@ -11,7 +11,7 @@ void get_instructions(void)
 	int n = 0;
 	instruction_t instructions[] = {
 		{"push", &push}, {"pop", &pop},
-		{"pint	", &pint}, {"swap", &swap},
+		{"pint", &pint}, {"swap", &swap},
 		{"nop", &nop}, {"add", &add},
 		{"pall", &pall}, {"sub", &sub},
 		{"div", &_div}, {"mul", &mul},
