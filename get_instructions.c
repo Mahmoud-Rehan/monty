@@ -8,7 +8,7 @@
 
 void get_instructions(void)
 {
-	int n;
+	int n = 0;
 	instruction_t instructions[] = {
 		{"push", &push}, {"pop", &pop},
 		{"pint	", &pint}, {"swap", &swap},
@@ -34,7 +34,7 @@ void get_instructions(void)
 		return;
 	}
 
-	for (n = 0; instructions[n].opcode != NULL; n++)
+	for (; instructions[n].opcode != NULL; n++)
 	{
 		if (strcmp(instructions[n].opcode, arguments->tokens[0]) == 0)
 		{
