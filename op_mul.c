@@ -17,7 +17,7 @@ void mul(stack_t **stack, unsigned int line_number)
 
 	if (arguments->stack_len < 2)
 	{
-		dprintf(2, "L%d: can't sub, stack too short\n", line_number);
+		dprintf(2, "L%d: can't mul, stack too short\n", line_number);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
